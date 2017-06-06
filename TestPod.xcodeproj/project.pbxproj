@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F1B571BC1EE6F2A40055C749 /* TestPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B571B21EE6F2A40055C749 /* TestPod.framework */; };
 		F1B571C11EE6F2A40055C749 /* TestPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B571C01EE6F2A40055C749 /* TestPodTests.swift */; };
-		F1B571C31EE6F2A50055C749 /* TestPod.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B571B51EE6F2A40055C749 /* TestPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1B571CD1EE6F2BE0055C749 /* UIColor+OttawamHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B571CC1EE6F2BE0055C749 /* UIColor+OttawamHealth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		F1B571B21EE6F2A40055C749 /* TestPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1B571B51EE6F2A40055C749 /* TestPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPod.h; sourceTree = "<group>"; };
 		F1B571B61EE6F2A40055C749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1B571BB1EE6F2A40055C749 /* TestPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B571C01EE6F2A40055C749 /* TestPodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPodTests.swift; sourceTree = "<group>"; };
 		F1B571C21EE6F2A50055C749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B571CC1EE6F2BE0055C749 /* UIColor+OttawamHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+OttawamHealth.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,8 @@
 		F1B571B41EE6F2A40055C749 /* TestPod */ = {
 			isa = PBXGroup;
 			children = (
-				F1B571B51EE6F2A40055C749 /* TestPod.h */,
 				F1B571B61EE6F2A40055C749 /* Info.plist */,
+				F1B571CC1EE6F2BE0055C749 /* UIColor+OttawamHealth.swift */,
 			);
 			path = TestPod;
 			sourceTree = "<group>";
@@ -93,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B571C31EE6F2A50055C749 /* TestPod.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +147,7 @@
 				TargetAttributes = {
 					F1B571B11EE6F2A40055C749 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					F1B571BA1EE6F2A40055C749 = {
@@ -196,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B571CD1EE6F2BE0055C749 /* UIColor+OttawamHealth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +323,7 @@
 		F1B571C71EE6F2A50055C749 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gbalisi.TestPod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +343,7 @@
 		F1B571C81EE6F2A50055C749 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +362,7 @@
 		F1B571CA1EE6F2A50055C749 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TestPodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gbalisi.TestPodTests;
@@ -369,6 +374,7 @@
 		F1B571CB1EE6F2A50055C749 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TestPodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gbalisi.TestPodTests;
